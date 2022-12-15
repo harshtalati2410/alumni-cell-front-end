@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Alumni-Cell</title>
+    </head>
+    <link rel="stylesheet" href="styles/mainpage.css" />
+    <script
+      src="https://kit.fontawesome.com/817bcca585.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <%-include("partials/navbar.ejs")%>
+
+    <div class="carousel">
+      <div class="invite">
+        <h2>Alumni Cell, IIT Indore</h2>
+        <h3>Welcomes You</h3>
+      </div>
+      <div class="slides">
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1663184885_SNyf9bTKLP.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1668783033_rqJejKZaa0.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1663184626_QBOAp2wxn4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1663184626_QBOAp2wxn4.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1642674408_wyyfpefkNb.jpg"
+            alt=""
+          />
+        </div>
+        <div class="slide">
+          <img
+            src="https://almashines.s3.dualstack.ap-southeast-1.amazonaws.com/assets/images/gallary_photos/t1642674326_080EctbSff.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="slide-controls">
+        <button id="prev-btn">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button id="next-btn">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+    </div>
+    <div class="section2">
+      <h1 class="heading">IIT INDORE ALUMNI PLATFORM</h1>
+      <div class="sub-section-2">
+        <div class="blocks">
+          <div class="dot">
+            <i class="fa-solid fa-person"></i>
+          </div>
+          <h2 class="block-heading">Alumni Directory</h2>
+
+          <div class="block-content">
+            Explore IIT Indore Complete Alumni Directory & connect with alumni
+            with your Interests & Domain
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="dot">
+            <i class="fa-solid fa-user-graduate"></i>
+          </div>
+          <h2 class="block-heading">Your Batchmates</h2>
+          <div class="block-content">
+            View Our Exclusive Batchmates Directory to know about whereabouts of
+            your batchmates
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="dot"><i class="fa-solid fa-location-dot"></i></div>
+          <h2 class="block-heading">Alumni In Your City</h2>
+          <div class="block-content">
+            Find Aumni living in your city & be a part of IIT Indore meetups in
+            your cities
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="dot"><i class="fa-solid fa-address-card"></i></div>
+          <h2 class="block-heading">Your Alumni Profile</h2>
+          <div class="block-content">
+            Create & Complete your Alumni Profile & remain connected with with
+            all opportunities matching your interest
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="update-title">
+      <h1>Alumni Updates</h1>
+      <a href="#">View All</a>
+    </div>
+    <hr style="width: 98%; margin-left: 1%" />
+    <div class="updates">
+      <div class="tile">
+        <div class="image">
+          <img
+            src="https://alumni.iiti.ac.in/api/campusfeed/s3?img=assets/images/campusfeed/1680679_1667206438OeqSUv.jpg&width=450"
+            alt="no internet"
+          />
+        </div>
+        <span class="date">Oct 31, 2022</span>
+        <h3 class="headings">Batch of 2026 IIT Indore</h3>
+        <div class="description">
+          366 students, including 77 girl students, 1 OCI student and 4
+          preparatory students, enrolled in various disciplines of BTech Courses
+          at IIT Indore.
+        </div>
+        <div class="last">
+          <span class="views">560</span>
+          <a href="#" class="read-more">READ MORE</a>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="image">
+          <img
+            src="https://alumni.iiti.ac.in/api/campusfeed/s3?img=assets/images/campusfeed/1680679_1667206438OeqSUv.jpg&width=450"
+            alt="no internet"
+          />
+        </div>
+        <span class="date">Oct 31, 2022</span>
+        <h3 class="headings">Batch of 2026 IIT Indore</h3>
+        <div class="description">
+          366 students, including 77 girl students, 1 OCI student and 4
+          preparatory students, enrolled in various disciplines of BTech Courses
+          at IIT Indore.
+        </div>
+        <div class="last">
+          <span class="views">560</span>
+          <a href="#" class="read-more">READ MORE</a>
+        </div>
+      </div>
+      <div class="tile">
+        <div class="image">
+          <img
+            src="https://alumni.iiti.ac.in/api/campusfeed/s3?img=assets/images/campusfeed/1680679_1667206438OeqSUv.jpg&width=450"
+            alt="no internet"
+          />
+        </div>
+        <span class="date">Oct 31, 2022</span>
+        <h3 class="headings">Batch of 2026 IIT Indore</h3>
+        <div class="description">
+          366 students, including 77 girl students, 1 OCI student and 4
+          preparatory students, enrolled in various disciplines of BTech Courses
+          at IIT Indore.
+        </div>
+        <div class="last">
+          <span class="views">560</span>
+          <a href="#" class="read-more">READ MORE</a>
+        </div>
+      </div>
+    </div>
+    <div class="section4">
+      <h2 class="heading">UPCOMING EVENT- REUNION- CLASS OF 2013</h2>
+      <h3 class="sub-heading">
+        It is with great pleasure we announce the Reunion of our Premier
+        Graduating Batch for B.Tech of IIT Indore! Do come to the reunion to
+        reminisce and cherish the fond memories!
+      </h3>
+      <div class="sub-section-4">
+        <div class="blocks">
+          <div class="block-body">
+            <div class="empty-dot">
+              <div class="dot4"><i class="fa-solid fa-star"></i></div>
+            </div>
+            <h2 class="block-heading">REGISTER NOW!</h2>
+
+            <div class="block-content">
+              Register for Alumni Reunion & get all the updates about the meet
+            </div>
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="block-body">
+            <div class="empty-dot">
+              <div class="dot4">
+                <i class="fa-solid fa-handshake-angle"></i>
+              </div>
+            </div>
+            <h2 class="block-heading">VOLUNTEER</h2>
+
+            <div class="block-content">
+              Volunteer for Alumni Reunion & contribute towards making it a huge
+              success
+            </div>
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="block-body">
+            <div class="empty-dot">
+              <div class="dot4">
+                <i class="fa-solid fa-square-share-nodes"></i>
+              </div>
+            </div>
+            <h2 class="block-heading">INVITE</h2>
+
+            <div class="block-content">
+              Invite your friends to join the Alumni Portal & register for
+              Alumni Meet
+            </div>
+          </div>
+        </div>
+        <div class="blocks">
+          <div class="block-body">
+            <div class="empty-dot">
+              <div class="dot4"><i class="fa-solid fa-square-phone"></i></div>
+            </div>
+            <h2 class="block-heading">GET IN TOUCH</h2>
+
+            <div class="block-content">
+              Contact us for more details about the program
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="director">
+      <h1>Message from Director</h1>
+      <div class="dot-space">
+        <span class="dot1"></span>
+        <h2>Suhas Joshi</h2>
+      </div>
+      <div class="director-content">
+        <p>
+          World over, the most acclaimed universities and institutions boast of
+          having a strong and vibrant alumnus base.<br />
+          The alumni network of IIT Indore forms a very important and
+          significant element to propel the institute towards excellence in all
+          spheres of science, technology, humanity and social sciences, and in
+          producing leaders.<br />
+          IIT Indore has been fortunate, right from its first graduating batch,
+          to have a robust institute- alumni network, which we must all nurture
+          and see its exponential growth in all dimensions.<br />
+          With the very best wishes
+        </p>
+      </div>
+    </div>
+
+    <div class="initiatives">
+      <h1>Initiatives & Activities</h1>
+      <div class="initiatives-grid">
+        <div class="initiative-block">
+          <div class="symbol"><i class="fa-solid fa-location-dot"></i></div>
+          <div class="content">
+            <div class="initiative-name">MAGNUM OPUS 2017</div>
+            <div class="initiative-description">
+              The Alumni Cell at IIT Indore organized the institute's first ever
+              Alumni Meet - 'Magnum Opus' on the 28th of December 2017 at the
+              newly constructed campus at Simrol.
+            </div>
+            <a href="#" class="view-more">View More</a>
+          </div>
+        </div>
+        <div class="initiative-block">
+          <div class="symbol"><i class="fa-solid fa-book-open-reader"></i></div>
+          <div class="content">
+            <div class="initiative-name">FIRST ALUMNI MAGAZINE</div>
+            <div class="initiative-description">
+              This magazine was launched on the joyous occasion of 'Magnum
+              Opus', the first alumni meet of IIT Indore, by Prof. Pradeep
+              Mathur, Director, in the presence of alumni from first three
+              graduating batches, faculty members and students at the
+              institute's new-constructed campus at Simrol.
+            </div>
+            <a href="#" class="view-more">View More</a>
+          </div>
+        </div>
+        <div class="initiative-block">
+          <div class="symbol"><i class="fa-solid fa-icons"></i></div>
+          <div class="content">
+            <div class="initiative-name">ALUMNI STORIES</div>
+            <div class="initiative-description">
+              Compling Stories by alumni, generating statistics about their
+              current locations, profiles and positions.
+            </div>
+            <a href="#" class="view-more">View More</a>
+          </div>
+        </div>
+        <div class="initiative-block">
+          <div class="symbol"><i class="fa-solid fa-people-group"></i></div>
+          <div class="content">
+            <div class="initiative-name">YEARBOOK</div>
+            <div class="initiative-description">
+              We are all set to launch our First Yearbook which will take you to
+              back to those never-to-return memories.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <%-include("partials/footer.ejs")%>
+    <script src="mainpage.js"></script>
+  </body>
+</html>

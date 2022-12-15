@@ -1,0 +1,131 @@
+.footer {
+    margin: 0%;
+    padding-top: 5%;
+}
+
+.background {
+    height: 200px;
+    color: white;
+    font-weight: 700;
+    font-size: x-large;
+    background-color: #0353a4;
+    padding-top: 80px;
+}
+
+.footer-title {
+    padding-left: 2%;
+}
+
+.footer-contact {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -25%;
+    color: black;
+    width: 100%;
+}
+
+.footer-contact-info {
+    width: 40%;
+    box-shadow: 0 0 4px 4px #07070731;
+    background-color: white;
+    padding: 0%;
+    border-radius: 0.1vw;
+}
+
+.footer-contact-title {
+    color: black;
+    font-weight: 200;
+    font-size: max(1.5vw, 20px);
+    padding: 3%;
+    padding-top: 20%;
+    padding-bottom: 2%;
+    margin-left: 3%;
+}
+
+.details {
+    color: gray;
+    font-weight: 100;
+    font-size: max(1.2vw, 16px);
+    line-height: max(1.7vw, 25px);
+    padding: 3%;
+    padding-bottom: 5%;
+    margin-left: 5%;
+}
+
+.details:last-child {
+    padding-bottom: 20%;
+}
+
+.fa-phone,
+.fa-envelope {
+    margin-right: 3%;
+}
+
+.map {
+    background-color: white;
+    width: 55%;
+    box-shadow: 0 0 4px 4px #07070731;
+    border-radius: 0.2vw;
+}
+
+.footer-last {
+    background-color: rgb(33, 33, 33);
+    height: 60px;
+    text-align: center;
+    font-weight: 100;
+    width: 100%;
+    color: white;
+    font-size: larger;
+    padding-top: 10px;
+}
+
+.footer-buttons {
+    color: white;
+    padding: 1%;
+    margin: 0.1%;
+    font-size: large;
+    font-style: normal;
+    border-radius: 2%;
+    transition: all 0.2s ease-in;
+    border: 1px solid rgb(33, 33, 33);
+    text-decoration: none;
+}
+
+.footer-buttons:hover {
+    color: rgb(33, 33, 33);
+    border: 1px solid rgb(152, 152, 152);
+    background-color: white;
+    box-shadow: 0 0 2px 2px rgba(152, 152, 152, 0.433);
+    text-decoration: underline;
+}
+
+@media (max-width:650px) {
+    .footer-last {
+        height: 120px;
+    }
+
+    .footer-buttons {
+        float: left;
+    }
+
+    .footer-buttons:nth-child(3n+1) {
+        clear: left;
+    }
+
+    .footer-contact{
+        display: block;
+    }
+
+    .footer-contact-info{
+        width: 90%;
+        margin: 5%;
+    }
+    .map{
+        width: 90%;
+        margin: 5%;
+        position: relative;
+        top: 110%;
+        height: 50vw;
+    }
+}

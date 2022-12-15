@@ -1,0 +1,254 @@
+body {
+    margin: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    display: block;
+    position: sticky;
+    border: 1px solid #001845;
+    border-radius: 0 0 5px 5px;
+    /* margin: 0; */
+}
+
+.logo {
+    position: absolute;
+    width: 8%;
+    min-width: 80px;
+    /* height: calc(6vw); */
+    margin: 10px;
+    border: 1px;
+    /* z-index: 1; */
+    box-shadow: 9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    border-radius: 5%;
+    animation: logoMove 4s infinite;
+    transition: all 1s ease;
+
+}
+
+@keyframes logoMove {
+    0% {
+        left: 0px;
+        box-shadow: 9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    }
+
+    25% {
+        left: 7px;
+        box-shadow: -9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    }
+
+    50% {
+        left: 0px;
+        box-shadow: 9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    }
+
+    75% {
+        left: 7px;
+        box-shadow: -9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    }
+
+    100% {
+        left: 0px;
+        box-shadow: 9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    }
+}
+
+.logo:hover {
+    box-shadow: -9px -7px 8px 2px rgba(116, 92, 248, 0.5);
+    /* z-index: 10; */
+    transform: translate3D(7px, 0px, 100px);
+    animation: none;
+}
+
+img {
+    position: relative;
+    background-color: #001845;
+    border-radius: 5%;
+    width: 100%;
+    /* height: 25vh; */
+    /* left: calc(50% - 50px); */
+    /* top: calc(50% - 50px); */
+}
+
+.title {
+    padding-left: max(10.5%, 120px);
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    height: calc(7vw);
+    min-height: 70px;
+}
+
+.heading {
+    width: 85%;
+    font-size: x-large;
+    font-weight: 700;
+}
+
+.heading-alt {
+    display: none;
+}
+
+.login {
+    width: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+.login-btn {
+    font-size: large;
+    padding: 5%;
+    border: 2px solid #001845;
+    color: #001845;
+    background-color: white;
+    transition: all 0.2s ease-in;
+}
+
+.login-btn:hover {
+    background-color: #001845;
+    color: white;
+}
+
+.navbar {
+    padding-left: max(10%, 120px);
+    padding-top: 0%;
+    padding-bottom: 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #001845;
+    border-radius: 0 0 5px 5px;
+    height: calc(4.5vw);
+    min-height: 45px;
+}
+
+
+.nav-block {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0%;
+    height: 100%;
+    margin: 0%;
+}
+
+.contact {
+    display: flex;
+    justify-content: flex-end;
+}
+
+@media (max-width:650px) {
+    .contact {
+        display: none;
+    }
+    .logo{
+        width: 5%;
+        min-width: 40px;
+    }
+    .navbar{
+        padding-left: 2%;
+    }
+    .title{
+        padding-left: max(6%,60px);
+    }
+    .heading{
+        width: 65%;
+    }
+    .login{
+        width: 35%;
+    }
+}
+
+.nav-items,
+.change {
+    font: italic bold 12px/30px Georgia, serif;
+    color: white;
+    display: flex;
+    /* margin-left: 5%; */
+    /* margin-right: 5%; */
+    align-items: center;
+    padding: 0.8vw;
+    transition: all 0.2s ease-out;
+    border-radius: 10% 10% 0 0;
+}
+
+
+.nav-items:hover {
+    font: italic bold 12px/30px Georgia, serif;
+    color: #001845;
+    background-color: white;
+    border-radius: 5% 5% 0 0;
+}
+
+.nav-items:hover .change {
+    fill: #001845;
+}
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 0.8vw;
+    left: 0%;
+    background-color: white;
+    min-width: 200px;
+    border-radius: 0 2% 2% 2%;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #0353a4;
+    padding: 4%;
+    text-decoration: none;
+    display: block;
+    transition: all 0.2s ease-out;
+}
+
+.dropdown-content a:hover {
+    animation: links 0.2s ease-out;
+    background-color: #0353a4;
+    border-radius: 5%;
+    color: white;
+}
+
+@keyframes links {
+    0% {
+        color: #0353a4;
+        background-color: white;
+    }
+
+    100% {
+        background-color: #0353a4;
+        border-radius: 5%;
+        color: white;
+    }
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 725px) {
+    .title {
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 1%;
+    }
+
+    .title>.heading {
+        display: none;
+    }
+
+    .heading-alt {
+        display: block;
+        width: 85%;
+        font-size: x-large;
+        font-weight: 700;
+    }
+}
