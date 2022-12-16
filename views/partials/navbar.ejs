@@ -1,5 +1,60 @@
 <link rel="stylesheet" href="../styles/trial.css" />
 
+<!-- login form -->
+
+<section class="modal hidden">
+  <button class="btn-close">Close</button>
+  <div class="title-text">
+    <div class="login-title login">Login Form</div>
+    <div class="login-title signup">Signup Form</div>
+  </div>
+  <div class="form-container">
+    <div class="login-slide-control">
+      <input type="radio" name="login-slide" id="login" checked />
+      <input type="radio" name="login-slide" id="signup" />
+      <label for="login" class="login-slide login">Login</label>
+      <label for="signup" class="login-slide signup">Signup</label>
+      <div class="slider-tab"></div>
+    </div>
+    <div class="form-inner">
+      <form action="#" class="login">
+        <div class="field">
+          <input type="text" placeholder="Email Address" required />
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div class="pass-link"><a href="#">Forgot password?</a></div>
+        <div class="field login-form-btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Login" />
+        </div>
+        <div class="signup-link">
+          Dont't have an account? <a href="">Signup now</a>
+        </div>
+      </form>
+      <form action="#" class="signup">
+        <div class="field">
+          <input type="text" placeholder="Email Address" required />
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Password" required />
+        </div>
+        <div class="field">
+          <input type="password" placeholder="Confirm password" required />
+        </div>
+        <div class="field login-form-btn">
+          <div class="btn-layer"></div>
+          <input type="submit" value="Signup" />
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<div class="overlay hidden"></div>
+
+<!-- navbar container -->
 <div class="container">
   <div class="logo">
     <img
@@ -10,8 +65,8 @@
   <div class="title">
     <div class="heading">Indian Institute of Technology Indore</div>
     <div class="heading-alt">IIT Indore</div>
-    <div class="login">
-      <button class="login-btn">Login</button>
+    <div class="join-us">
+      <button class="join-us-btn btn btn-open">Join Us</button>
     </div>
   </div>
   <div class="navbar">
@@ -102,3 +157,52 @@
     </div>
   </div>
 </div>
+<script>
+  const modal = document.querySelector(".modal");
+  const overlay = document.querySelector(".overlay");
+  const openModalBtn = document.querySelector(".btn-open");
+  const closeModalBtn = document.querySelector(".btn-close");
+
+  // close modal function
+  const closeModal = function () {
+    modal.classList.add("hidden");
+    overlay.classList.add("hidden");
+  };
+
+  // close the modal when the close button and overlay is clicked
+  closeModalBtn.addEventListener("click", closeModal);
+  overlay.addEventListener("click", closeModal);
+
+  // close modal when the Esc key is pressed
+  document.addEventListener("keydown", function (e) {
+    if (e.key === "Escape" && !modal.classList.contains("hidden")) {
+      closeModal();
+    }
+  });
+
+  // open modal function
+  const openModal = function () {
+    modal.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+  };
+  // open modal event
+  openModalBtn.addEventListener("click", openModal);
+
+  const loginText = document.querySelector(".title-text .login");
+  const loginForm = document.querySelector("form.login");
+  const loginBtn = document.querySelector("label.login");
+  const signupBtn = document.querySelector("label.signup");
+  const signupLink = document.querySelector("form .signup-link a");
+  signupBtn.onclick = () => {
+    loginForm.style.marginLeft = "-50%";
+    loginText.style.marginLeft = "-50%";
+  };
+  loginBtn.onclick = () => {
+    loginForm.style.marginLeft = "0%";
+    loginText.style.marginLeft = "0%";
+  };
+  signupLink.onclick = () => {
+    signupBtn.click();
+    return false;
+  };
+</script>
